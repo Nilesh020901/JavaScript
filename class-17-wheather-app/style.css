@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+    background-color: #01161E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.wheather > div {
+    margin: 0.625rem;
+}
+
+.wheather {
+    font-size: 4rem;
+}
+
+.wheather p {
+    font-size: 2rem;
+}
+
+.wheather span {
+    font-size: 0.75rem;
+}
+
+nav {
+    height: 100px;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0%;
+    max-width: 100%;
+    background-color: rgba(180, 177, 177, 0.202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form {
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.search-field {
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+    max-width: 90%;
+}
+
+nav form button {
+    background-color: #4ECDC4;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
