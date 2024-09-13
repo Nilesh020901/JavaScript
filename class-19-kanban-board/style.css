@@ -84,6 +84,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 2rem;
+    gap: 2rem;
 }
 
 .ticket-cont{
@@ -91,6 +92,7 @@ body {
     width: 15rem;
     background-color: coral;
     position: relative;
+    border: 1.5px solid black;
 }
 
 .ticket-color{
