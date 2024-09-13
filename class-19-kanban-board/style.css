@@ -109,3 +109,42 @@ body {
     right: 1rem;
     font-size: 1.5rem;
 }
+
+/* Modal Pop up */
+
+.modal-cont{
+	height: 50vh;
+	width: 45vw;
+	position: absolute;
+	top: 30%;
+	left: 27%;
+	display: flex;
+}
+
+.textarea-cont{
+	height: 100%;
+	width: 70%;
+	background-color: #dfe4ea;
+	resize: none;
+	outline: none;
+	font-size: 2rem;	
+}
+
+.priority-colors-container{
+	background-color: #4b4b4b;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.priority-color{
+	height: 3rem;
+	width: 5rem;
+}
+
+.active{
+	border: 5px solid lightsalmon;
+}
