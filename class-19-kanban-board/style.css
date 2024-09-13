@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont {
+    background-color: #4b4b4b;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-priority-color {
+    background-color: #3d3d3d;
+    height: 3.5rem;
+    width: 18rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.color-box {
+    height: 1.5rem;
+    width: 3rem;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.lightgrey{
+    background-color: lightgrey;
+}
+
+.action-btn{
+    height: 3rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.action-btn>*{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn:hover{
+    background-color: #4BB543;
+    font-size: 2.8rem;
+}
+
+.remove-btn:hover{
+    background-color: red;
+    font-size: 2.8rem;
+
+}
+
+/* Ticket-Design */
+
+.main-cont{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: coral;
+    position: relative;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: black;
+    color: aliceblue;
+}
+
+.ticket-lock{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
