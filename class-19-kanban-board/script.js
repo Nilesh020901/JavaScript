@@ -1,9 +1,10 @@
-const addBtn = document.querySelector('.add-btn')
-const modelCont = document.querySelector('.modal-cont')
-const mainCont = document.querySelector('.main-cont')
-const textArea = document.querySelector('.textarea-cont')
-const allPriColor = document.querySelectorAll('.priority-color')
-let modalPriorityColor = 'lightpink'
+const addBtn = document.querySelector('.add-btn');
+const modelCont = document.querySelector('.modal-cont');
+const mainCont = document.querySelector('.main-cont');
+const textArea = document.querySelector('.textarea-cont');
+const allPriColor = document.querySelectorAll('.priority-color');
+let modalPriorityColor = 'lightpink';
+let toolboxcolors = document.querySelectorAll('.colors');
 
 
 let unLockClass = 'fa-lock-open'
@@ -78,5 +79,47 @@ function handleLock(ticket){
             ticketLockIcon.classList.remove(unLockClass)
             ticketLockIcon.classList.add(lockClass)
         }
-    })
+    });
+}
+
+function handleColor(ticket){
+    let colorBand = ticket.querySelector()
+    colorBand.addEventListener('click', function(){
+        let currentColor = colorBand.classList[0];
+
+        let currentColorIdx = colors.findIndex(function (color){
+            return currentColor == color;
+        });
+
+        currentColorIdx++;
+
+        let newTicketColorIdx = currentColorIdx % colors.length;
+        let newTicketColor = colors[newTicketColorIdx];
+
+        ticketColorBand.classList.remove(currentColor);
+        ticketColorBand.classList.add(newTicketColor);
+
+    });
+}
+
+for (let i = 0; i < toolboxcolors.length; i++){
+    toolboxcolors[i].addEventListener('click', function(){
+        let selectedToolboxColor = toolboxcolors[i].classList[0];
+
+        let allTickets = document.querySelectorAll('.ticket-cont');
+        for (let j = 0; j < allTickets.length; j++){
+            allTickets[j].remove();
+
+            let filteredTickets = ticketArr.filter(function (ticket){
+                return selectedToolboxColor === ticket.ticketcolor;
+            });
+            filteredTickets.forEach(function (filteredTickets){
+                createTicket(
+                    filteredTickets.ticketcolor,
+                    filteredTickets.TicketTask,
+                    filteredTickets.ticketID
+                );
+            });
+        }
+    });
 }
