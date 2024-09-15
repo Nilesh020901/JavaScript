@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-.toolbox-priority-color {
+.toolbox-priority-cont {
     background-color: #3d3d3d;
     height: 3.5rem;
     width: 18rem;
@@ -47,7 +47,7 @@ body {
     background-color: lightgrey;
 }
 
-.action-btn{
+.action-btn-cont{
     height: 3rem;
     width: 8rem;
     background-color: #3d3d3d;
@@ -58,7 +58,7 @@ body {
     border: 1px solid black;
 }
 
-.action-btn>*{
+.action-btn-cont>*{
     display: flex;
     color: white;
     font-size: 2rem;
@@ -73,7 +73,7 @@ body {
 }
 
 .remove-btn:hover{
-    background-color: red;
+    background-color: #4BB543;
     font-size: 2.8rem;
 
 }
@@ -85,6 +85,7 @@ body {
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .ticket-cont{
@@ -123,13 +124,13 @@ body {
 	display: flex;
 }
 
-.textarea-cont{
+.textArea-cont{
 	height: 100%;
 	width: 70%;
 	background-color: #dfe4ea;
 	resize: none;
 	outline: none;
-	font-size: 2rem;	
+	font-size: 2rem;
 }
 
 .priority-colors-container{
