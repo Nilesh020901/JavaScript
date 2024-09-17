@@ -116,7 +116,6 @@ allPriorityColors.forEach(function (colorElem) {
   });
 });
 
-// Starting at 10:50
 
 // Ticket Filteration wrt colors
 toolBoxColors.forEach(function(colorBox , i){
